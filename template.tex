@@ -6,10 +6,18 @@
 \usepackage[colorlinks, urlcolor=blue]{hyperref}
 \usepackage[utf8]{inputenc}
 
-\pagestyle{empty}
+\def\semindex#1{\ifnum#1<8 1\else 2\fi}
+\def\semester{\the\year/\semindex\month}
+
+\title{\bf{nome do trabalho}}
+\author{INEXXXX - nome da matéria - UFSC \\
+Gustavo Zambonin}
+\date{\semester}
 
 \begin{document}
 
+\maketitle
 
+stuff
 
 \end{document}
