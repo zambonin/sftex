@@ -1,0 +1,4 @@
+This LaTeX class makes it _straightforward_ to write simple `article`-like
+documents, like university assignments and technical drafts. It should be
+used as a Git submodule. Working examples are featured throughout my other
+repositories.
