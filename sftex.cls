@@ -13,6 +13,9 @@
 \RequirePackage[a4paper, margin=1.5cm]{geometry}
 \RequirePackage[colorlinks, urlcolor=blue, citecolor=red]{hyperref}
 
+\RequirePackage{color}
+\RequirePackage{listings}
+
 \newcommand*{\email}[1]{\gdef\@email{#1}}
 \newcommand*{\@email}{\string\email}
 
@@ -49,4 +52,21 @@
   \blfootnote{\texttt{\hfill \@email \hfill \href{\@src}{src/}}}
   \vskip 1.5em
 }
+
+\definecolor{codegreen}{rgb}{0, 0.6, 0}
+\definecolor{codegray}{rgb}{0.5, 0.5, 0.5}
+\definecolor{codepurple}{rgb}{0.58, 0, 0.82}
+
+\lstset{
+  basicstyle=\footnotesize\ttfamily,
+  breaklines=true,
+  commentstyle=\color{codegreen},
+  extendedchars=true,
+  keywordstyle=\color{blue},
+  numbers=left,
+  numberstyle=\tiny\color{codegray},
+  showstringspaces=false,
+  stringstyle=\color{codepurple}
+}
+
 \endinput
